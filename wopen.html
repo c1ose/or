@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>window.open</title>
+<script type="text/javascript">
+function wopen(){
+window.open('http://www.imooc.com','_blank','height=400,width=600,/*top=100,left=0,*/menubar=yes,status=yes');
+}
+function wclose(){
+	var new1 = window.open("http://www.orangesoda.cc");
+	setTimeout("wopen()",1500);
+	new1.close();
+	document
+	
+}
+</script>
+
+</head>
+<body>
+
+
+<input name="open" type="button" onClick="wopen()" value="打开新窗口"/>
+<input name="close"type="button" onClick="wclose()" value="关闭窗口"/>
+</body>
+</html>
